@@ -1,4 +1,6 @@
-import { connectDb, signUpModel } from "@/models/signUpModel";
+import { connectDb } from "@/helpers/lib";
+import { sendVerificaitonMail } from "@/helpers/sendMail";
+import {  signUpModel } from "@/models/signUpModel";
 import { NextResponse } from "next/server";
 
 connectDb();
@@ -48,11 +50,12 @@ export async function POST(request) {
             gender,
             email,
             password,
-            about
+            about,
         });
 
         // Save user to the database
         await user.save();
+        await sendVerificaitonMail(user.email)
         return NextResponse.json({
             success: "SUCCESS",
             message: "User created successfully"
