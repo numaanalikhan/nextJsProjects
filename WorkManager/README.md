@@ -18,5 +18,18 @@ in helpers/sendMail.js
 
 -------The above is used to generate a just verification_________________________
 
-### email verfication....
+### verification of user through email...
+  ![Verification Email Flow](./public/mailVerification-readme.png)
 
+
+    1. app/api/signup...
+      .. fetch all the request data
+      .. chec validation
+      .. check existing user
+      .. generate jwt token
+      .. save new user
+      .. sendVerificationMail(mail,token)
+    
+    2. sendVerificationMail...
+      ..transport, receiver , sendMail, html in `<p>mailstuff</p>` 
+  
