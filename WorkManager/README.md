@@ -19,8 +19,7 @@ in helpers/sendMail.js
 -------The above is used to generate a just verification_________________________
 
 ### verification of user through email...
-  ![Verification Email Flow](./public/mailVerification-readme.png)
-
+![Verification Email Flow](/mailVerification-readme.png)
 
     1. app/api/signup...
       .. fetch all the request data
