@@ -1,0 +1,48 @@
+.container{
+    
+}
+
+.title{
+    color:#53c28b;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.item{
+    display:flex;
+    gap:100px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:50px;
+}
+
+.contentDesc{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.imageContainer{
+    flex:1;
+    position:relative;
+    width: 500px;
+    height: 500px;
+}
+
+.img{
+    object-fit: fill;
+}
+
+.item:nth-child(2n+1){
+    flex-direction: row-reverse;
+}
