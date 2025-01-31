@@ -1,0 +1,14 @@
+.image{
+    border-radius: 50%;
+    animation: move 4s infinite ease-in-out alternate;
+    /* timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes move {
+    from{
+        transform: translateY(-25px) scale(0.9);
+    }
+    to{
+        transform: translateY(0) ;
+    }
+}

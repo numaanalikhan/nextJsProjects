@@ -1,18 +1,7 @@
-// import { Geist, Geist_Mono } from "next/font/google";
-import { ToastContainer } from "react-toastify";
-import "./globals.css";   // abcd
 import NavBar from "@/components/NavBar";
-// import ToastContainer from "toast"
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import "./globals.css";   
+import styles from './page.module.css'
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -22,13 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* <ToastContainer/> */}
-        <ToastContainer/>
-        <NavBar/>
-        {children}
+      <body className={styles.container}>
+        <div className="min-h-screen flex justify-between flex-col max-w-[1336px] ">
+          <NavBar/>
+          {children}
+          <Footer/>
+          </div>
       </body>
     </html>
   );
