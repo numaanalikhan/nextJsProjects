@@ -1,8 +1,11 @@
 import NavBar from "@/components/NavBar/page";
 import "./globals.css";
 import Footer from "@/components/Footer/page";
+<<<<<<< HEAD
 import { ThemeProvider } from "@/context/ThemeContext";
 // import { ThemeContext } from "@/context/ThemeContext";
+=======
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
 
 
 
@@ -15,13 +18,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body> 
+<<<<<<< HEAD
         <ThemeProvider>
+=======
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
         <div  className="container">
         <NavBar/>
         {children}
         <Footer/>
         </div>
+<<<<<<< HEAD
         </ThemeProvider>
+=======
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
       </body>
     </html>
   );

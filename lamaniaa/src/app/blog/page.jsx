@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import styles from './page.module.css'
 import Image from "next/image";
@@ -105,3 +106,14 @@ function Blog() {
 }
 
 export default Blog;
+=======
+import React from 'react'
+
+function Blog() {
+  return (
+    <div>Blog</div>
+  )
+}
+
+export default Blog
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187

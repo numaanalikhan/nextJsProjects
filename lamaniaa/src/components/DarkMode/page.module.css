@@ -2,7 +2,11 @@
     display: flex;
     border:2px solid #1dad5e;
     border-radius: 30px;
+<<<<<<< HEAD
     padding:1px;
+=======
+    padding:2px 4px;
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -10,7 +14,10 @@
 }
 
 .icon{
+<<<<<<< HEAD
     font-style: 8px;
+=======
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
 }
 
 .ball{
@@ -19,6 +26,14 @@
     background-color:#53c28b;
     border-radius: 50%;
     position: absolute;
+<<<<<<< HEAD
     /* right: 0;     */
 }
 
+=======
+}
+
+.active{
+    transform: translateX(20px);
+}
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187

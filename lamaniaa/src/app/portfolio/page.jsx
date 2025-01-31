@@ -10,7 +10,11 @@ function Portfolio() {
       <div className={styles.items}>
       
         <Link
+<<<<<<< HEAD
         href={"/portfolio/illustrations"}
+=======
+        href={"/portfolio/illustraion"}
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
          className={styles.item}>
           <span className={styles.title}>
             Illustration
@@ -26,7 +30,11 @@ function Portfolio() {
          </Link>
 
         <Link
+<<<<<<< HEAD
         href={"/portfolio/applications"}
+=======
+        href={"/portfolio/applicaions"}
+>>>>>>> 5bd321c354a5e78f878fd7fecb379d4b60206187
          className={styles.item}>
           <span className={styles.title}>
             Applications
