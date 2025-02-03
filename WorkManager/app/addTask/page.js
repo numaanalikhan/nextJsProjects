@@ -2,7 +2,8 @@ import React from 'react'
 
 function AddTask() {
   return (
-    <div>AddTask</div>
+    <div className='bg-transparent'>
+    </div>
   )
 }
 

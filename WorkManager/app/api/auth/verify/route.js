@@ -2,6 +2,7 @@
 import { signUpModel } from "@/models/signUpModel";
 import jwt from "jsonwebtoken";
 import { connect } from "mongoose";
+import { redirect } from "next/dist/server/api-utils";
 import { NextResponse } from "next/server";
 
 connect()
@@ -28,7 +29,6 @@ export async function GET(request) {
 
     // get the user and update isVerified to true...
    await signUpModel.findOneAndUpdate({email},{isVerified:true})
-
     return NextResponse.json({
       success: true,
       message: "User is verified succesfully",

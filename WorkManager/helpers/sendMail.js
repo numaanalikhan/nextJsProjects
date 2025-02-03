@@ -15,7 +15,7 @@ const auth = nodemailer.createTransport({
     }
 })
 
-const verficationUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/verify/?token=${verficationToken}`
+const verficationUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/verify/?token=${verficationToken}`
 
 // the receiver
 const receiver = {
@@ -24,7 +24,7 @@ const receiver = {
     subject: "email verification",
     text: " this email will expire with in two hours",
     html:
-   ` <div>
+   `<div>
         <p>This is a Verifcation Mail for verifing the User</p>
         <p>Please click the link here to verfiy the email and user</p>
         <button><a href=${verficationUrl}>Click Here</a></button>
